@@ -1,47 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>True care solutions</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>True Care Solutions | Reliable Home Services</title>
+  <style>
+    /* Reset some defaults */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f7f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #00796b;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #004d40;
+      color: #fff;
+    }
+
+    /* Hero Section */
+    header.hero {
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+      box-shadow: inset 0 0 0 1000px rgba(0, 121, 107, 0.7);
+    }
+
+    header.hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    header.hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    header.hero .btn {
+      background-color: #004d40;
+      color: white;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(0, 77, 64, 0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    header.hero .btn:hover {
+      background-color: #00796b;
+    }
+
+    /* Intro Section */
+    section.intro {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    section.intro h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #00796b;
+    }
+
+    section.intro p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Features Section */
+    section.features {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem 4rem;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto 3rem;
+    }
+
+    section.features .feature {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      flex: 1 1 280px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    section.features .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    section.features h3 {
+      color: #004d40;
+      margin-bottom: 0.8rem;
+    }
+
+    section.features p {
+      color: #666;
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      section.features {
+        flex-direction: column;
+        padding-bottom: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">True care solutions</div>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <header class="hero">
-        <h1>Reliable Home Services, 9am to 5pm</h1>
-        <p>Your trusted partner for maintenance, cleaning, and more.</p>
-        <a href="contact.html" class="btn">Request Service</a>
-    </header>
-    <section class="intro">
-        <h2>Welcome to True care solutions!</h2>
-        <p>
-            We provide dependable home services to keep your property in top shape. From cleaning to repairs, our professional team is ready to help. Discover our services or get in touch today!
-        </p>
-    </section>
-    <section class="features">
-        <div class="feature">
-            <h3>Experienced Professionals</h3>
-            <p>Our staff are trained and vetted for quality service.</p>
-        </div>
-        <div class="feature">
-            <h3>Flexible Scheduling</h3>
-            <p>Book appointments at your convenience, Monday to Friday.</p>
-        </div>
-        <div class="feature">
-            <h3>Satisfaction Guaranteed</h3>
-            <p>We stand by our work and strive for 100% customer satisfaction.</p>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 True care solutions. All rights reserved.</p>
-    </footer>
+  <nav>
+    <div class="logo">True Care Solutions</div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Reliable Home Services, 9am to 5pm</h1>
+    <p>Your trusted partner for maintenance, cleaning, and more.</p>
+    <a href="contact.html" class="btn">Request Service</a>
+  </header>
+
+  <section class="intro">
+    <h2>Welcome to True Care Solutions!</h2>
+    <p>
+      We provide dependable home services to keep your property in top shape. From cleaning to repairs, our professional team is ready to help. Discover our services or get in touch today!
+    </p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Experienced Professionals</h3>
+      <p>Our staff are trained and vetted for quality service.</p>
+    </div>
+    <div class="feature">
+      <h3>Flexible Scheduling</h3>
+      <p>Book appointments at your convenience, Monday to Friday.</p>
+    </div>
+    <div class="feature">
+      <h3>Satisfaction Guaranteed</h3>
+      <p>We stand by our work and strive for 100% customer satisfaction.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 True Care Solutions. All rights reserved.</p>
+  </footer>
 </body>
 </html>
