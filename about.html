@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About | True Care Solutions LLC</title>
   <style>
-    /* Match styles from index.html */
+    /* Keep styling consistent with your site */
     * {
       box-sizing: border-box;
     }
@@ -46,7 +46,7 @@
     .container {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 2rem 1.5rem;
       background: white;
       border-radius: 8px;
       box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
@@ -67,6 +67,37 @@
     ul {
       list-style: disc inside;
       margin-left: 1rem;
+    }
+    .team-photo {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 1rem auto 2rem auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      object-fit: cover;
+    }
+    .testimonial {
+      background: #e6f0ff;
+      border-left: 5px solid #004080;
+      margin: 2rem 0;
+      padding: 1rem 1.5rem;
+      font-style: italic;
+      border-radius: 5px;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #004080;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+    .cta-button:hover {
+      background-color: #00264d;
     }
     footer {
       background: #003366;
@@ -99,37 +130,42 @@
 <div class="container">
 
   <section>
-    <h2>Who We Are</h2>
+    <h2>Our Journey</h2>
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Technicians collaborating on repairs" class="team-photo" />
     <p>
-      True Care Solutions LLC specializes in expert technical repair services tailored to meet diverse project needs. Our skilled technicians deliver high-quality workmanship with professionalism and care, ensuring smooth and reliable results.
+      Founded with the vision of connecting skilled technicians to the right projects, True Care Solutions LLC is committed to delivering reliable and expert repair services. Our carefully curated network of professionals ensures each job is completed with precision and care, allowing clients to focus on their core business while we handle the technical details.
     </p>
   </section>
 
   <section>
-    <h2>What Sets Us Apart</h2>
+    <h2>What Makes Us Different</h2>
     <ul>
-      <li>Experienced and highly trained professionals</li>
-      <li>Transparent pricing with no hidden fees</li>
-      <li>Flexible scheduling tailored to your requirements</li>
-      <li>Dedicated customer support focused on satisfaction</li>
+      <li>Experienced technicians matched precisely to project needs</li>
+      <li>Transparent NET-30 ACH payment terms for smooth transactions</li>
+      <li>Flexible scheduling and responsive communication</li>
+      <li>Customer satisfaction is at the heart of everything we do</li>
     </ul>
   </section>
 
   <section>
-    <h2>Our Business Model</h2>
+    <h2>How We Work</h2>
     <p>
-      We connect the right technicians with the right projects, streamlining the repair process for both clients and service providers. Our NET-30 ACH payment terms ensure reliable and timely payments.
+      Our business model is simple and effective: we connect clients with the most suitable technicians, ensuring projects are completed on time and within budget. Whether it's a one-time repair or ongoing maintenance, our streamlined process and trusted network guarantee professional results.
     </p>
     <p>
-      Clients submit their service requests, and we match them with certified technicians in our network. Technicians benefit from steady work opportunities aligned with their skills and schedules. This collaborative model creates a win-win environment for everyone.
+      By focusing on matching the right skills to the right tasks, we optimize quality and efficiency — creating a seamless experience for everyone involved.
     </p>
   </section>
 
   <section>
-    <h2>Our Vision</h2>
-    <p>
-      We strive to be the trusted link between customers and technicians by delivering exceptional service with integrity, transparency, and excellence. At True Care Solutions LLC, your satisfaction is our top priority.
-    </p>
+    <h2>Customer Feedback</h2>
+    <div class="testimonial">
+      “True Care Solutions exceeded our expectations. Their technicians are professional, knowledgeable, and timely. We appreciate the hassle-free coordination and excellent service.” — A Satisfied Client
+    </div>
+  </section>
+
+  <section style="text-align:center;">
+    <a href="contact.html" class="cta-button">Get In Touch with Us</a>
   </section>
 
 </div>
