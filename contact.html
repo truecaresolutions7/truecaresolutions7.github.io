@@ -1,49 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact | True care solutions</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | True Care Solutions</title>
+  <style>
+    /* Reset & base styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #004080;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+    nav .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #0066cc;
+    }
+    header {
+      background-color: #e6f0ff;
+      padding: 2rem;
+      text-align: center;
+      color: #004080;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 1.2px;
+    }
+    section.contact {
+      max-width: 600px;
+      background-color: white;
+      margin: 2rem auto 4rem;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    section.contact h2 {
+      color: #004080;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      border-bottom: 3px solid #004080;
+      padding-bottom: 0.5rem;
+    }
+    section.contact p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    section.contact ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 2rem;
+      font-weight: 600;
+    }
+    section.contact ul li {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+    }
+    form.contact-form label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    form.contact-form input,
+    form.contact-form textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    form.contact-form input:focus,
+    form.contact-form textarea:focus {
+      border-color: #004080;
+      outline: none;
+    }
+    form.contact-form button {
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form.contact-form button:hover {
+      background-color: #003366;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+    @media (max-width: 650px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      section.contact {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">True care solutions</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-    <section class="contact">
-        <h2>Get in Touch</h2>
-        <p>
-            Ready to book a service or have questions? Reach out to our team!
-        </p>
-        <ul>
-            <li><strong>Email:</strong> info@truecaresolutions.in</li>
-            <li><strong>Phone:</strong> (555) 123-4567</li>
-            <li><strong>Address:</strong> 123 Main Street, YourTown, Country</li>
-        </ul>
-        <h2>Send Us a Message</h2>
-        <form class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2025 True care solutions. All rights reserved.</p>
-    </footer>
+
+<nav>
+  <div class="logo">True Care Solutions</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Contact Us</h1>
+</header>
+
+<section class="contact" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Get in Touch</h2>
+  <p>Ready to book a service or have questions? Reach out to our team!</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:info@truecaresolutions.in">info@truecaresolutions.in</a></li>
+    <li><strong>Phone:</strong> <a href="tel:+15551234567">(555) 123-4567</a></li>
+    <li><strong>Address:</strong> 123 Main Street, YourTown, Country</li>
+  </ul>
+
+  <h2>Send Us a Message</h2>
+  <form class="contact-form" action="mailto:info@truecaresolutions.in" method="POST" enctype="text/plain" aria-label="Contact form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 True Care Solutions. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
