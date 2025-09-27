@@ -3,221 +3,176 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>True Care Solutions | Reliable Home Services</title>
+  <title>True Care Solutions LLC | Reliable Tech Repair Services</title>
   <style>
-    /* Reset some defaults */
+    /* Consistent styling matching About page */
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
     body {
-      background-color: #f4f7f8;
-      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
       line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
     }
-
+    header {
+      background: #004080;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
     nav {
-      background-color: #00796b;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    nav .logo {
-      font-weight: 700;
-      font-size: 1.5rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
-      padding: 6px 10px;
-      border-radius: 4px;
-    }
-
-    nav ul li a:hover,
-    nav ul li a.active {
-      background-color: #004d40;
-      color: #fff;
-    }
-
-    /* Hero Section */
-    header.hero {
-      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 6rem 1rem 4rem;
-      box-shadow: inset 0 0 0 1000px rgba(0, 121, 107, 0.7);
-    }
-
-    header.hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    }
-
-    header.hero p {
-      font-size: 1.3rem;
-      margin-bottom: 2rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-    }
-
-    header.hero .btn {
-      background-color: #004d40;
-      color: white;
-      padding: 0.8rem 2rem;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 600;
-      font-size: 1.1rem;
-      box-shadow: 0 4px 8px rgba(0, 77, 64, 0.4);
-      transition: background-color 0.3s ease;
-    }
-
-    header.hero .btn:hover {
-      background-color: #00796b;
-    }
-
-    /* Intro Section */
-    section.intro {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-      text-align: center;
-    }
-
-    section.intro h2 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-      color: #00796b;
-    }
-
-    section.intro p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-
-    /* Features Section */
-    section.features {
+      background: #003366;
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 2rem 1rem 4rem;
-      flex-wrap: wrap;
-      max-width: 1000px;
-      margin: 0 auto 3rem;
+      padding: 1rem 0;
     }
-
-    section.features .feature {
-      background-color: white;
-      padding: 2rem;
-      border-radius: 8px;
-      flex: 1 1 280px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      text-align: center;
-    }
-
-    section.features .feature:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
-    }
-
-    section.features h3 {
-      color: #004d40;
-      margin-bottom: 0.8rem;
-    }
-
-    section.features p {
-      color: #666;
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
       font-size: 1rem;
+      padding: 0.2rem 0.5rem;
     }
-
-    /* Footer */
+    nav a:hover, nav a.active {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto 4rem auto;
+      padding: 0 1.5rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      color: #004080;
+      border-bottom: 3px solid #004080;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    ul.services-list {
+      list-style: disc inside;
+      padding-left: 1rem;
+      font-size: 1rem;
+      color: #333;
+    }
+    ul.services-list li {
+      margin-bottom: 0.6rem;
+    }
+    .hero-image {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #004080;
+      color: white;
+      padding: 0.75rem 1.8rem;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 1.5rem;
+    }
+    .cta-button:hover {
+      background-color: #00264d;
+    }
     footer {
-      background-color: #004d40;
+      background: #003366;
       color: white;
       text-align: center;
-      padding: 1rem 0;
+      padding: 1rem;
       font-size: 0.9rem;
-      letter-spacing: 1px;
     }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      nav ul {
+    @media (max-width: 600px) {
+      nav {
         flex-direction: column;
-        width: 100%;
-        margin-top: 1rem;
-      }
-
-      section.features {
-        flex-direction: column;
-        padding-bottom: 2rem;
+        gap: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <div class="logo">True Care Solutions</div>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <header class="hero">
-    <h1>Reliable Home Services, 9am to 5pm</h1>
-    <p>Your trusted partner for maintenance, cleaning, and more.</p>
-    <a href="contact.html" class="btn">Request Service</a>
-  </header>
+<header>
+  <h1>True Care Solutions LLC</h1>
+  <p>Connecting You with Expert Technicians for Quality Repair Services</p>
+</header>
 
-  <section class="intro">
-    <h2>Welcome to True Care Solutions!</h2>
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+  <section>
+    <h2>Welcome to True Care Solutions LLC</h2>
+    <img
+      src="https://images.unsplash.com/photo-1526403227268-7bfac7d57ecf?auto=format&fit=crop&w=900&q=80"
+      alt="Technician repairing a smartphone"
+      class="hero-image"
+    />
     <p>
-      We provide dependable home services to keep your property in top shape. From cleaning to repairs, our professional team is ready to help. Discover our services or get in touch today!
+      At True Care Solutions LLC, we specialize in connecting businesses with highly skilled technicians to ensure efficient and reliable repair services. Our network is built on trust, professionalism, and a commitment to quality.
+    </p>
+    <p>
+      Whether you require on-demand technical repairs or ongoing maintenance support, our team matches the right expertise to the right project. We simplify your workflow and help keep your operations running smoothly.
     </p>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <h3>Experienced Professionals</h3>
-      <p>Our staff are trained and vetted for quality service.</p>
-    </div>
-    <div class="feature">
-      <h3>Flexible Scheduling</h3>
-      <p>Book appointments at your convenience, Monday to Friday.</p>
-    </div>
-    <div class="feature">
-      <h3>Satisfaction Guaranteed</h3>
-      <p>We stand by our work and strive for 100% customer satisfaction.</p>
-    </div>
+  <section>
+    <h2>Our Services</h2>
+    <ul class="services-list">
+      <li>Smartphone and Tablet Repairs</li>
+      <li>Screen Replacement</li>
+      <li>Battery Replacement</li>
+      <li>Diagnostic Testing</li>
+      <li>Software Troubleshooting</li>
+      <li>Accessories Installation and Setup</li>
+    </ul>
+    <a href="services.html" class="cta-button">Explore Our Services</a>
   </section>
 
-  <footer>
-    <p>&copy; 2025 True Care Solutions. All rights reserved.</p>
-  </footer>
+  <section>
+    <h2>Get Started Today</h2>
+    <p>
+      Ready to connect with expert technicians? We offer transparent NET-30 ACH payment terms to make transactions smooth and reliable. Reach out to us for a consultation and discover how True Care Solutions LLC can support your technical needs.
+    </p>
+    <a href="contact.html" class="cta-button">Contact Us</a>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 True Care Solutions LLC. All rights reserved.
+</footer>
+
 </body>
 </html>
