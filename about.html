@@ -1,47 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>About | True Care Solutions LLC</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | True Care Solutions LLC</title>
+  <style>
+    /* Match styles from index.html */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      background: #003366;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0.2rem 0.5rem;
+    }
+    nav a.active, nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      border-bottom: 3px solid #004080;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: #004080;
+    }
+    p, ul {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    ul {
+      list-style: disc inside;
+      margin-left: 1rem;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">True Care Solutions LLC</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <header>
-        <h1>About Us</h1>
-    </header>
+<header>
+  <h1>About True Care Solutions LLC</h1>
+</header>
 
-    <section class="about">
-        <h2>Who We Are</h2>
-        <p>
-            At True Care Solutions LLC, we specialize in providing seamless and dependable home maintenance services. Our experienced team is dedicated to ensuring your property remains in top condition with skill, care, and professionalism.
-        </p>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-        <h2>What Sets Us Apart</h2>
-        <ul>
-            <li>USA regestred company</li>
-            <li>Transparent pricing with no hidden fees</li>
-            <li>Scheduling flexibility to fit your busy lifestyle</li>
-            <li>Committed to delivering exceptional customer experiences</li>
-        </ul>
+<div class="container">
 
-        <h2>Our Vision</h2>
-        <p>
-            We strive to be your trusted partner for all your home service needs by consistently exceeding expectations through quality workmanship, integrity, and outstanding support.
-        </p>
-    </section>
+  <section>
+    <h2>Who We Are</h2>
+    <p>
+      True Care Solutions LLC is a US-registered company specializing in expert technical repair services designed to meet the unique needs of AT&T stores. Our experienced technicians deliver high-quality workmanship with professionalism and care, ensuring your operations stay up and running smoothly.
+    </p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 True Care Solutions LLC. All rights reserved.</p>
-    </footer>
+  <section>
+    <h2>What Sets Us Apart</h2>
+    <ul>
+      <li>Locally owned and operated with strong community focus</li>
+      <li>Fully licensed, insured, and highly trained professionals</li>
+      <li>Transparent pricing with no surprise fees</li>
+      <li>Flexible scheduling tailored to your needs</li>
+      <li>Dedicated customer support and satisfaction guarantee</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Our Business Model</h2>
+    <p>
+      We connect the right technicians with the right projects, streamlining the repair process for both clients and technicians. Our NET-30 ACH payment terms ensure reliable and timely payments. Partnering with AT&T stores, we handle all repair needs with the utmost quality and efficiency.
+    </p>
+    <p>
+      Clients submit their service requests, and we match them with certified technicians in our network. Technicians benefit from steady work opportunities aligned with their skills and schedules. This collaborative model creates a win-win environment for everyone.
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Vision</h2>
+    <p>
+      We aim to be the trusted link between customers and technicians by delivering exceptional service with integrity, transparency, and excellence. At True Care Solutions LLC, your satisfaction is our top priority.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 True Care Solutions LLC. All rights reserved.
+</footer>
+
 </body>
 </html>
