@@ -1,112 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>True care solutions LLC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us – True Care Solution USA</title>
+  <style>
+    body {
+      background-color: #e8f5e9;
+      color: #22543d;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #b9f6ca;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #388e3c;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #ffffffcc;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #c8e6c9;
+      padding: 2rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .service-card {
+      background: #f1f8e9;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 1px 3px #c8e6c9;
+    }
+    .service-card img {
+      max-width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .why-choose {
+      margin-top: 2rem;
+      background: #c8e6c9;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .contact-info {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+    a {
+      color: #1b5e20;
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1rem; }
+      .services { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">True Care Solution LLC</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#why">Why Choose Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-content">
-            <h1>True Care Solution LLC </h1>
-            <p>
-                Connecting skilled technicians with the right projects—nationwide.
-            </p>
-            <a href="#contact" class="btn">Request Service</a>
-        </div>
-    </header>
-
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>
-            True care solutions LLC ia a USA registered company dedicated to connecting skilled technicians with the right projects across the United States. We specialize in sourcing experienced professionals who are experts in their trades and committed to delivering high-quality results—on time and with care.
-        </p>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Our Services Include</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <img src="https://placehold.co/80x80/54d486/white?text=Lighting" alt="Lighting repair">
-                <h3>Lighting Repair & Replacement</h3>
-                <p>Interior and exterior lighting solutions for your property.</p>
-            </div>
-            <div class="service-item">
-                <img src="https://placehold.co/80x80/54d486/white?text=Handyman" alt="Handyman">
-                <h3>General Handyman Services</h3>
-                <p>Repairs, installations, maintenance, and more.</p>
-            </div>
-            <div class="service-item">
-                <img src="https://placehold.co/80x80/54d486/white?text=Plumbing" alt="Plumbing">
-                <h3>Plumbing & Electrical Work</h3>
-                <p>Professional plumbing and electrical services.</p>
-            </div>
-            <div class="service-item">
-                <img src="https://placehold.co/80x80/54d486/white?text=Glass" alt="Glass Replacement">
-                <h3>Glass Replacement</h3>
-                <p>Safe and reliable glass repairs and replacements.</p>
-            </div>
-            <div class="service-item">
-                <img src="https://placehold.co/80x80/54d486/white?text=Painting" alt="Wall Repair and Painting">
-                <h3>Wall Repair & Painting</h3>
-                <p>Wall restoration and professional painting services.</p>
-            </div>
-            <div class="service-item">
-                <img src="https://placehold.co/80x80/54d486/white?text=Door" alt="Door Repair">
-                <h3>Door Repair & More</h3>
-                <p>Expert solutions for doors and other home needs.</p>
-            </div>
-        </div>
-        <p class="service-desc">
-            We proudly serve both residential and commercial clients. Whether it's a small repair or a large-scale project, our trusted technicians bring the skills and professionalism needed to get the job done right—the first time.
-        </p>
-    </section>
-
-    <section id="why" class="why-choose">
-        <h2>Why Choose Us?</h2>
-        <div class="why-list">
-            <div class="why-item">
-                <span>🌎</span>
-                <h4>Nationwide technician sourcing</h4>
-            </div>
-            <div class="why-item">
-                <span>🛠️</span>
-                <h4>Reliable, skilled professionals</h4>
-            </div>
-            <div class="why-item">
-                <span>⏰</span>
-                <h4>Timely project completion</h4>
-            </div>
-            <div class="why-item">
-                <span>✅</span>
-                <h4>Quality workmanship you can trust</h4>
-            </div>
-        </div>
-        <p>
-    </section>
-
-    <section id="contact" class="contact-info">
-        <h2>Contact Information</h2>
-        <ul>
-            <li><strong>Company:</strong> True care solutions LLC </li>
-            <li><strong>Address:</strong> 30 N Gould St Ste N, Sheridan, WY 82801</li>
-            <li><strong>Phone:</strong> XXX XXX XXXX</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 True care solutions LLC . All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>About Us – True Care Solution USA</h1>
+  </header>
+  <div class="container">
+    <p>
+      <strong>True Care Solution USA</strong> is a registered company dedicated to connecting skilled technicians with the right projects across the United States. We specialize in sourcing experienced professionals who are experts in their trades and committed to delivering high-quality results—on time and with care.
+    </p>
+    <h2>Our Services Include:</h2>
+    <div class="services">
+      <div class="service-card">
+        <img src="https://cdn.pixabay.com/photo/2017/03/14/10/30/lamp-2142728_1280.jpg" alt="Interior Lighting" />
+        <p>Interior and exterior lighting repair and replacement</p>
+        <a href="https://pixabay.com/images/search/interior%20lighting/" target="_blank">More images</a>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Handyman Services" />
+        <p>General handyman services</p>
+        <a href="https://unsplash.com/s/photos/handyman-services" target="_blank">More images</a>
+      </div>
+      <div class="service-card">
+        <img src="https://images.pexels.com/photos/7394421/pexels-photo-7394421.jpeg?auto=compress&w=400&q=80" alt="Plumbing and Electrical Work" />
+        <p>Plumbing and electrical work</p>
+        <a href="https://www.pexels.com/search/plumbing%20and%20electrical/" target="_blank">More images</a>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn.pixabay.com/photo/2016/03/09/09/30/glass-1246611_1280.jpg" alt="Glass Replacement" />
+        <p>Glass replacement</p>
+        <a href="https://pixabay.com/images/search/glass%20replacement/" target="_blank">More images</a>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn.pixabay.com/photo/2016/01/19/15/05/wall-1149906_1280.jpg" alt="Wall Repair and Painting" />
+        <p>Wall repair and painting</p>
+        <a href="https://pixabay.com/images/search/wall%20repair/" target="_blank">More images</a>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn.pixabay.com/photo/2014/12/21/23/54/door-579254_1280.png" alt="Door Repair" />
+        <p>Door repair and more</p>
+        <a href="https://pixabay.com/images/search/door%20repair%20/" target="_blank">More images</a>
+      </div>
+    </div>
+    <div class="why-choose">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Nationwide technician sourcing</li>
+        <li>Reliable, skilled professionals</li>
+        <li>Timely project completion</li>
+        <li>Quality workmanship you can trust</li>
+      </ul>
+      <p>
+        Let True Care Solution USA handle your next repair, renovation, or maintenance task with the care and precision it deserves.
+      </p>
+    </div>
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p><strong>Address:</strong> 30 N Gould St Ste N, Sheridan, WY 82801</p>
+      <p><strong>Email:</strong> <a href="mailto:service@truecaresolution.in">service@truecaresolution.in</a></p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 True Care Solution USA. All rights reserved.
+  </footer>
 </body>
 </html>
