@@ -4,25 +4,26 @@ body {
   background: #f7faf7;
   color: #1a3a1a;
 }
-
-header {
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.hero {
   background: linear-gradient(90deg, #b6f5c1 40%, #e0ffe6 100%);
   color: #195e21;
   text-align: center;
   padding: 60px 0 40px 0;
 }
-
-header h1 {
+.hero h1 {
   font-size: 2.8em;
   margin-bottom: 0.3em;
   letter-spacing: 2px;
 }
-
-.subtitle {
+.tagline {
   font-size: 1.3em;
   margin-bottom: 1em;
 }
-
 .cta {
   display: inline-block;
   padding: 0.7em 1.5em;
@@ -38,29 +39,20 @@ header h1 {
 .cta:hover {
   background: #29b25c;
 }
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.about, .services, .contact {
+.services {
   padding: 50px 0;
 }
-
-h2 {
+.services h2 {
+  text-align: center;
   color: #29b25c;
   margin-bottom: 24px;
 }
-
-.service-list {
+.service-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 }
-
 .service-card {
   background: #fff;
   border: 1px solid #d8f5e2;
@@ -71,11 +63,9 @@ h2 {
   text-align: center;
   transition: box-shadow 0.2s;
 }
-
 .service-card:hover {
   box-shadow: 0 6px 24px #b6f5c1;
 }
-
 .service-card img {
   width: 100%;
   height: 160px;
@@ -83,22 +73,24 @@ h2 {
   border-radius: 8px;
   margin-bottom: 1em;
 }
-
 .service-card h3 {
   margin: 0.5em 0 0.4em 0;
   color: #1a3a1a;
 }
-
 .service-card p {
   color: #2d5930;
 }
-
+.about, .contact {
+  padding: 50px 0;
+}
+.about h2, .contact h2 {
+  color: #29b25c;
+}
 address {
   margin-top: 1em;
   font-style: normal;
   color: #195e21;
 }
-
 .contact form {
   display: flex;
   flex-direction: column;
@@ -106,14 +98,12 @@ address {
   max-width: 400px;
   margin: 0 auto;
 }
-
 .contact input, .contact textarea {
   padding: 12px;
   border: 1px solid #b6f5c1;
   border-radius: 8px;
   font-size: 1em;
 }
-
 .contact button {
   padding: 12px;
   background: #41d67c;
@@ -127,7 +117,6 @@ address {
 .contact button:hover {
   background: #29b25c;
 }
-
 footer {
   background: #e0ffe6;
   color: #195e21;
@@ -136,9 +125,8 @@ footer {
   margin-top: 30px;
   font-size: 1em;
 }
-
 @media (max-width: 900px) {
-  .service-list {
+  .service-cards {
     flex-direction: column;
     align-items: center;
   }
