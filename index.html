@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>True Care Solutions - Home Services Made Easy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>True Care Solutions LLC</title>
+  <style>
+    body { margin:0; font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; position: sticky; top:0; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 100; }
+    .logo { font-size: 24px; font-weight: bold; color: #005a87; }
+    nav a { margin: 0 15px; font-weight: 500; color: #444; }
+    .hero { height: 70vh; background: url('hero-bg.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.4); }
+    .hero-content { position: relative; color: white; text-align: center; max-width: 700px; }
+    .hero-content h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero-content p { font-size: 1.25rem; margin-bottom: 30px; }
+    .btn-primary { padding: 15px 30px; background: #005a87; color: white; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; }
+    
+    .section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    .section h2 { text-align: center; margin-bottom: 40px; color: #005a87; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 30px; }
+    .card { background: #f9f9f9; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center; }
+    .card-icon { font-size: 40px; margin-bottom: 15px; color: #005a87; }
+    .card-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 10px; }
+    .card-desc { font-size: 0.95rem; color: #666; }
+
+    .about p { line-height: 1.6; margin-bottom: 15px; }
+    
+    .contact-form { max-width: 600px; margin: auto; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+    .contact-form button { display: block; width: 100%; padding: 15px; background: #005a87; color: white; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; }
+
+    footer { background: #222; color: #ccc; padding: 40px 20px; text-align: center; }
+    footer a { color: #ccc; }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="container nav-bar">
-      <a class="logo" href="index.html">True Care Solutions</a>
-      <nav>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <a href="contact.html" class="cta">Get Started</a>
-    </div>
+    <div class="logo">True Care Solutions LLC</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h1>Home Services Made Easy</h1>
-      <p>Connect with trusted professionals for repairs, maintenance, and more.</p>
-      <form class="search-form">
-        <input type="text" placeholder="What service do you need?">
-        <input type="text" placeholder="Zip code">
-        <button type="submit">Find Pros</button>
-      </form>
-      <div class="trust-signals">
-        <img src="images/trustpilot.png" alt="Trustpilot" height="28">
-        <span>4.8/5 average rating</span>
-      </div>
+    <div class="hero-content">
+      <h1>Your Property, Our Priority</h1>
+      <p>Reliable service across the USA for all home & commercial needs</p>
+      <button class="btn-primary" onclick="location.href='#contact'">Get a Free Quote</button>
     </div>
   </section>
 
-  <section class="services-preview">
-    <div class="container">
-      <h2>Popular Services</h2>
-      <div class="service-list">
-        <div class="service-card">
-          <i class="fa-solid fa-lightbulb"></i>
-          <h3>Lighting & Electrical</h3>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-screwdriver-wrench"></i>
-          <h3>Handyman Services</h3>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-faucet-drip"></i>
-          <h3>Plumbing</h3>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-window-restore"></i>
-          <h3>Glass Replacement</h3>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-paint-roller"></i>
-          <h3>Wall Repair & Painting</h3>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-door-closed"></i>
-          <h3>Door Repair & More</h3>
-        </div>
-      </div>
-      <a href="services.html" class="view-all">View All Services</a>
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card"><div class="card-icon">🔧</div><div class="card-title">Handymen</div><div class="card-desc">General repairs & maintenance</div></div>
+      <div class="card"><div class="card-icon">⚡</div><div class="card-title">Electrical</div><div class="card-desc">Wiring, lighting, etc.</div></div>
+      <div class="card"><div class="card-icon">🔥</div><div class="card-title">HVAC</div><div class="card-desc">Heating & cooling systems</div></div>
+      <div class="card"><div class="card-icon">🚿</div><div class="card-title">Plumbing</div><div class="card-desc">Pipes, fixtures, drainage</div></div>
+      <div class="card"><div class="card-icon">🪚</div><div class="card-title">Flooring</div><div class="card-desc">Installations & repair</div></div>
+      <div class="card"><div class="card-icon">🌿</div><div class="card-title">Lawn Care</div><div class="card-desc">Landscaping & mowing</div></div>
+      <div class="card"><div class="card-icon">🎨</div><div class="card-title">Painting</div><div class="card-desc">Interior & exterior</div></div>
+      <div class="card"><div class="card-icon">🪟</div><div class="card-title">Windows</div><div class="card-desc">Replacement & repair</div></div>
+      <div class="card"><div class="card-icon">📺</div><div class="card-title">Appliances</div><div class="card-desc">Repair & installation</div></div>
+      <div class="card"><div class="card-icon">🔨</div><div class="card-title">Remodeling</div><div class="card-desc">Home & commercial upgrades</div></div>
+      <div class="card"><div class="card-icon">🏠</div><div class="card-title">Roofing</div><div class="card-desc">Roof repair & installation</div></div>
+      <div class="card"><div class="card-icon">🚪</div><div class="card-title">Doors</div><div class="card-desc">Repair & replacement</div></div>
     </div>
   </section>
 
-  <section class="how-it-works-preview">
-    <div class="container">
-      <h2>How It Works</h2>
-      <div class="steps">
-        <div class="step">
-          <span class="step-number">1</span>
-          <p>Tell us about your project</p>
-        </div>
-        <div class="step">
-          <span class="step-number">2</span>
-          <p>Get matched with trusted pros</p>
-        </div>
-        <div class="step">
-          <span class="step-number">3</span>
-          <p>Book and relax!</p>
-        </div>
-      </div>
+  <section class="section" id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="grid">
+      <div class="card"><div class="card-title">1. Request a Quote</div><div class="card-desc">Fill out our form or call us</div></div>
+      <div class="card"><div class="card-title">2. Get Matched</div><div class="card-desc">We connect you with qualified pros</div></div>
+      <div class="card"><div class="card-title">3. Service Done</div><div class="card-desc">Work completed to your satisfaction</div></div>
     </div>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>About Us</h2>
+    <p>True Care Solutions LLC is registered in the USA and dedicated to connecting skilled technicians with quality projects. We serve residential and commercial clients, ensuring professionalism, reliability, and top-quality results.</p>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <input type="text" placeholder="Phone Number" />
+      <textarea rows="5" placeholder="How can we help you?"></textarea>
+      <button class="btn-primary">Send Message</button>
+    </div>
+    <p>Email: <a href="mailto:service@truecaresolutions.in">service@truecaresolutions.in</a></p>
+    <p>Address: 30 N Gould St Ste N, Sheridan, WY 82801</p>
   </section>
 
   <footer>
-    <div class="container">
-      &copy; 2025 True Care Solutions LLC – All Rights Reserved.
-    </div>
+    <p>© 2025 True Care Solutions LLC. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
