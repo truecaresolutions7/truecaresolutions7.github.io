@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact - True Care Solutions LLC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <a href="index.html" class="brand"><img src="assets/images/logo.png" alt="True care solutions LLC Logo" class="logo" /><span class="brand-text">True Care Solutions LLC</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="section">
+    <div class="container">
+      <h1 data-animate="fade-up">Contact Us</h1>
+      <div class="grid contact-grid">
+        <div class="card" data-animate="fade-up" data-delay="100">
+          <h3>Get in touch</h3>
+          <p>Phone: <a href="tel:+14692102710">469-210-2710</a></p>
+          <p>Email: <a href="mailto:service@truecaresolutions.in">service@truecaresolutions.in</a></p>
+          <p>Address: 30 N Gould St Ste N, Sheridan, WY 82801</p>
+        </div>
+        <div class="card" data-animate="fade-up" data-delay="150">
+          <h3>Request a Quote</h3>
+          <form id="contactForm" action="https://formspree.io/f/moqzbqya" method="POST" class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" required>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" required>
+            <label for="email">Email</label>
+            <input id="email" name="_replyto" type="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <div class="center"><button type="submit" class="btn btn-primary">Send Message</button></div>
+          </form>
+          <p class="muted">Form powered by Formspree. Replace with your own endpoint if desired.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="left">© 2025 True Care Solutions LLC</div>
+    <div class="right">30 N Gould St Ste N, Sheridan, WY 82801 · <a href="tel:+14692102710">469-210-2710</a> · <a href="mailto:service@truecaresolutions.in">service@truecaresolutions.in</a></div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
